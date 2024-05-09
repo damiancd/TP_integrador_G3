@@ -1,0 +1,203 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 25%;
+    height: auto;
+    display: block;
+    transition: 5ms;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos específicos para el iframe */
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Estilos para el icono */
+.fa-running {
+    margin-right: 10px;
+}
+
+
+/* Estilos específicos para el formulario de contacto */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: hsl(127, 91%, 22%);
+}
+
+/* Estilos para la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.image-container {
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.image-container img {
+    width: 100%;
+    transition: transform 0.5s;
+    border-radius: 3%
+
+    
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+}
+
+/* Media queries para responsive */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .gallery {
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+.destacado {
+    margin-bottom: 20px;
+    text-align: center;}
+
+/* Estilos para las actividades */
+.actividades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actividad {
+    margin: 10px;
+    text-align: center;
+}
+
+.actividad img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    
+}
