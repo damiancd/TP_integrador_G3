@@ -20,6 +20,9 @@ header img {
     display: block;
     transition: 5ms;
 }
+a{
+    text-decoration:none;
+}
 
 nav ul {
     list-style-type: none;
