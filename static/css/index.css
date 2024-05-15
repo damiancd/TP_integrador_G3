@@ -24,6 +24,10 @@ a{
     text-decoration:none;
 }
 
+a:hover{
+  color: blue;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
