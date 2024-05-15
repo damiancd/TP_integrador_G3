@@ -33,7 +33,7 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    text-decoration: none;
+    
 }
 
 main {
@@ -47,11 +47,17 @@ footer {
     text-align: center;
 }
 
+footer img {
+    width: 30px; /* Ajusta el tamaño de los iconos */
+    height: auto; /* Mantiene la proporción */
+    margin: 0 10px; /* Espacio entre los iconos */
+  }
+
 /* Estilos específicos para el iframe */
 iframe {
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 /* Estilos para el icono */
@@ -59,6 +65,19 @@ iframe {
     margin-right: 10px;
 }
 
+input{
+    display: inline;
+}
+
+h2{
+    font-size: large;
+    text-align: center;   
+}
+
+h3{
+    background-color:#4CAF50;
+    color: white;
+}
 
 /* Estilos específicos para el formulario de contacto */
 form {
@@ -71,7 +90,7 @@ form {
 }
 
 form label {
-    display: block;
+    display: block inline;
     margin-bottom: 10px;
     color: #555;
 }
@@ -133,9 +152,7 @@ form input[type="submit"]:hover {
 .image-container img {
     width: 100%;
     transition: transform 0.5s;
-    border-radius: 3%
-
-    
+    border-radius: 3% 
 }
 
 .image-container img:hover {
@@ -179,6 +196,7 @@ form input[type="submit"]:hover {
     }
 }
 
+
 .destacado {
     margin-bottom: 20px;
     text-align: center;}
@@ -188,16 +206,37 @@ form input[type="submit"]:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .actividad {
-    margin: 10px;
+    margin: 15px;
     text-align: center;
 }
 
 .actividad img {
-    width: 100%;
+    width: 75%;
     max-width: 150px;
     height: auto;
     
 }
+
+.location {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .location:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .location::before {
+    content: "\1F4CD"; /* Icono de ubicación GPS */
+    font-size: 20px;
+    margin-right: 10px;
+  }

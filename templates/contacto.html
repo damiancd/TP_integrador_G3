@@ -1,109 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSyD - Contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/index.css">
 </head>
-    <title>Actividades deportivas</title>
-</head>
-<header>
-    <h1><i class="fas fa-running"></i> Club Social y Deportivo</h1>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/templates/actividades.html">Actividades</a></li>
-            <li><a href="/templates/ubicacion.html">Ubicación</a></li>
-        </ul>
-    </nav>
-</header>
+
 <body>
-    <form id="contactForm" action="#" method="post">
+    <h3 style="text-align: center;">Formulario de Consulta</h3>
+    <form id="formulario" onsubmit="return validarDatos()">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
+        <input type="text" id="nombre" name="nombre" required><br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
+        <input type="email" id="email" name="email" required><br>
         <label for="actividad">Actividad: ⚽🎾🏀🥎🏐</label>
-        <select id="actividad" name="actividad" >
+        <select id="actividad" name="actividad">
+            <option value="">Seleccione..</option>
             <option value="futbol">Fútbol </option>
             <option value="tenis">Tenis</option>
             <option value="basket">Basketball</option>
             <option value="handball">Handball</option>
             <option value="voley">Voley</option>
         </select>
-        <br >
+        <br>
         <label for="genero">Genero:</label>
         <input type="radio" id="genero1" name="genero" value="m">
-        <label type="genero1">Masculino 🚹</label>
+        <label type="genero1">🚹Masculino</label>
         <input type="radio" id="genero2" name="genero" value="f">
-        <label for="genero2">Femenino 🚺</label>
-        <input type="radio" id="genero3" name="genero" value="mixto">
-        <label for="genero3">Mixto 🚻</label>
-        <input type="radio" id="genero3" name="genero" value="mixto" required true>
-        <label for="genero3">N/A</label>
-        <br>
+        <label for="genero2">🚺Femenino</label>
+        <input type="radio" id="genero3" name="genero" value="mixto"required>
+        <label for="genero3">🚻Mixto</label>
+        <br><br>
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" required></textarea>
         <br>
         <input type="checkbox" id="politica" name="politica" required>
         <label for="politica">Acepto la política de privacidad</label>
         <br>
+        <div id="campos"></div><br>
         <input type="submit" value="Enviar">
     </form>
-    
-<footer>
-    <p>&copy;2024 - Club social y Deportivo - Todos los derechos reservados.</p>
-</footer>
-
+    <br>
+    <footer>
+        <p>&copy;2024 - Club social y Deportivo - Todos los derechos reservados.</p>
+    </footer>
+    <script src="/static/js/validacion.js"></script>
+    <script src="/static/js/header.js"></script>
 </body>
-
-
 
 </html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validación de formulario</title>
-    <link rel="stylesheet" href="static/css/validacion.css">
-</head>
-
-<!--<body>
-    <h1>Formulario de registro</h1>
- El atributo onSubmit permite asociar una función de 
-    test en el formulario. Si la función retorna falso, 
-    les datos del formulario no se envían, quedan en la página. 
-
-    onsubmit="return nombreDeLaFunción()"
-    
-    COMPLETAR EL ATRIBUTO onsubmit en form 
-    <form id="formulario" onsubmit="return validarDatos()">
-        <label for="nombre">Primer Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br>
-        
-        <label for="dni">DNI:</label>
-        <input type="number" id="dni" name="dni" required><br>
-
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion" ><br>
-
-        <div id="campos"></div>
-
-        <input type="submit" value="Enviar">
-    </form>
-
-    
-    <script src="static/js/validacion.js"></script>
-</body>
-
-</html>-->
