@@ -14,7 +14,7 @@ let headerContent = `
 </header>
 `;
 
-// Agregar el contenido del encabezado al principio del body
+// Agrego el contenido del encabezado al principio del body
 document.body.insertAdjacentHTML('afterbegin', headerContent);
 
 
