@@ -203,7 +203,6 @@ form input[type="submit"]:hover {
     }
 }
 
-
 .destacado {
     margin-bottom: 20px;
     text-align: center;}
@@ -240,6 +239,8 @@ form input[type="submit"]:hover {
   
   .location:hover {
     background-color: #f0f0f0;
+    font-weight: bold;
+
   }
   
   .location::before {

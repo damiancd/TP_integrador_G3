@@ -22,7 +22,7 @@ function validarDatos(){
     }
   
     // Si todas las validaciones son exitosas, informar
-    alert("Datos validados.")
+    alert("Gracias Por Contactarse, su consulta será respondida a la brevedad.")
     return true
   
 }
