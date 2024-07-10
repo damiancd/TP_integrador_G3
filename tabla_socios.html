@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Social y Deportivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/tabla_socio.css">
+</head>
+<body>
+
+    <header id="header_tabla"></header>
+
+    <main>
+
+        <section class="container">
+            <div id="app" >
+
+                <!-- Botón Nuevo -->
+                <a class="nuevo" href="/templates/ingresar_socio.html">Nuevo</a>
+
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <p>Cargando .....</p>
+
+                    </section>
+
+                    <section v-else>
+                        
+                        <div >
+                            <table class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>DNI</th>
+                                        <th>Foto</th>
+                                        <th>Correo</th>
+                                        <th>Actividad</th>
+                                        <th>Acciones</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                    <tr v-for="socio in socios">
+                                        <td >{{socio.id}}</td>
+                                        <td>{{socio.nombre}}</td>
+                                        <td>{{socio.apellido}}</td>
+                                        <td>{{socio.dni}}</td>
+                                        <td>
+                                            <img :src="socio.imagen" alt="">
+                                        </td>
+                                        <td>{{socio.correo}}</td>
+                                        <td>{{socio.actividad}}</td>
+                                        <td>
+                                            <button type="button"  v-on:click="eliminar(socio.id)">Eliminar</button>
+                                        </td>
+                                        <td>
+                                            <a class="boton" :href="'/templates/editar_socio.html?id='+ socio.id+'&nombre=' +socio.nombre+ '&apellido=' +socio.apellido+'&dni=' +socio.dni +  '&imagen='+socio.imagen+'&correo=' +socio.correo+'&actividad=' +socio.actividad">Editar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Club Social y Deportivo - Todos los derechos reservados.</p>
+        <h2>Seguinos en nuestras redes</h2>
+        <a href="https://www.facebook.com" target="_blank"><img src="/static/img/facebook.png" alt="facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="/static/img/signo-de-twitter.png" alt="twitter"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="/static/img/instagram.png" alt="instagram"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="/static/img/youtube.png" alt="youtube"></a>
+    </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="static/js/tabla_socio.js"></script>
+    <script src="static/js/header.js"></script>
+    <script src="static/js/header_tabla.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
