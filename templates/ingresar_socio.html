@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/tabla_socio.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Alta Socio</title>
+</head>
+
+<body>
+
+    <header id="header_tabla"></header>
+
+    <main>
+
+        <section>
+            <div class="container-form">
+
+                <form action="">
+                    <div class="entrada">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="dni">DNI:</label>
+                        <input type="text" name="dni" id="dni">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="imagen">Foto:</label>
+                        <input type="text" name="imagen" id="imagen">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="correo">Correo:</label>
+                        <input type="text" name="correo" id="correo">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="actividad">Actividad: ⚽🎾🏀🥎🏐</label></label>    
+                        <select id="actividad" name="actividad">
+                            <option hidden selected value="">Elija un deporte</option>
+                            <option value="futbol">Fútbol </option>
+                            <option value="tenis">Tenis</option>
+                            <option value="basket">Basketball</option>
+                            <option value="handball">Handball</option>
+                            <option value="voley">Voley</option>
+                         </select>
+                    </div>
+
+                    <div class="entrada">
+                        <button class="modificar" type="button" onclick="guardar()">Guardar</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Club Social y Deportivo - Todos los derechos reservados.</p>
+        <h2>Seguinos en nuestras redes</h2>
+        <a href="https://www.facebook.com" target="_blank"><img src="/static/img/facebook.png" alt="facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="/static/img/signo-de-twitter.png" alt="twitter"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="/static/img/instagram.png" alt="instagram"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="/static/img/youtube.png" alt="youtube"></a>
+    </footer>
+
+    <script src="/static/js/ingresar_socio.js"></script>
+    <script src="/static/js/header.js"></script>
+    <script src="/static/js/header_tabla.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/ingresar_producto.css">
+    <link rel="stylesheet" href="/static/css/tabla_socio.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <section>
+
+            <div class="container-form">
+                <form>
+                   
+                    <div>
+                        <label for="id">ID</label>
+                        <input type="number" name="id" id="id" disabled>
+                    </div>
+            
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="dni">DNI:</label>
+                        <input type="text" name="dni" id="dni">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="imagen">Imagen:</label>
+                        <input type="text" name="imagen" id="imagen">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="correo">Correo:</label>
+                        <input type="text" name="correo" id="correo">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="actividad">Actividad: ⚽🎾🏀🥎🏐</label></label>    
+                        <select id="actividad" name="actividad">
+                            <option hidden selected value="">Elija un deporte</option>
+                            <option value="futbol">Fútbol </option>
+                            <option value="tenis">Tenis</option>
+                            <option value="basket">Basketball</option>
+                            <option value="handball">Handball</option>
+                            <option value="voley">Voley</option>
+                         </select>
+                    </div>
+                    
+                    <button class="modificar" type="button" onclick="modificar()">Modificar</button>
+                </form>
+          
+          
+              </div>
+
+        </section>
+    </main>
+
+    
+    <footer></footer>
+
+    <script src="/static/js/editar_socio.js"></script>
+    <script src="/static/js/header.js"></script>
+    <script src="/static/js/datos_editar.js"></script>
+    <script src="static/js/header_tabla.js"></script>
+</body>
+</html>
