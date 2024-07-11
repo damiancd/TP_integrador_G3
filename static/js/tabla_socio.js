@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        url:"https://damiancd.pythonanywhere.com/socios", // Retorna todos los registro de la tabla socios
+        url:"https://damiancd.pythonanywhere.com/socios", // Retorna todos los registro de la tabla socio
         productos:[],
         error:false,
         cargando:true
@@ -31,7 +31,7 @@ const { createApp } = Vue
         // el id se necesita para buscar en la DB y eliminarlo
         eliminar(id) {
             
-            const url = 'https://damiancd.pythonanywhere.com/socio/'+id;
+            const url = 'https://damiancd.pythonanywhere.com/borrar/'+id;
             var options = {
                 method: 'DELETE',
                 

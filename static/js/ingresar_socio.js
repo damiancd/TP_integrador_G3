@@ -19,7 +19,7 @@ function guardar() {
     }
     console.log(datos);
     
-    let url = "https://damiancd.pythonanywhere.com/socios"
+    let url = "https://damiancd.pythonanywhere.com/registro"
     var options = {
         body: JSON.stringify(datos),
         method: 'POST',

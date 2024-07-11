@@ -20,7 +20,7 @@ function modificar() {
 
 
 
-    let url = "https://damiancd.pythonanywhere.com/socio/"+id
+    let url = "https://damiancd.pythonanywhere.com/update/"+id
     var options = {
         body: JSON.stringify(datos),
         method: 'PUT',
