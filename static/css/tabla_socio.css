@@ -16,33 +16,33 @@
 
 
 table {
-    background-color: #054407;
+    background-color: #97b98a;
     border-collapse: collapse;
     width: 60vw;
     max-width: 60vw;
     margin: 2vw auto;
-    font-family: Arial, sans-serif;
+    font-family:'Roboto', sans-serif;
     height:auto;
     
   }
 
 th, td {
-    border: 0.1vw solid #dddddd;
+    border: 0.1vw solid #0a0007;
     padding: 0.8vw;
     text-align: left;
-    color: #dddddd;
+    color: #000000;
     
   }
 
 th {
-    background-color: #f2f2f2;
+    background-color: hsl(127, 91%, 22%);
     font-weight: bold;
-    color: #001F3F;
+    color: #ffffff;
 }
 
 a{
-    text-decoration: none;
-    color: #dddddd;
+    
+    color: #ffffff;
 }
 
 td:hover{
@@ -50,21 +50,21 @@ td:hover{
     color:#001F3F
 }
 
-a:hover{
+/*:hover{
     background-color: #f2f2f2;
     color:#001F3F
-}
+}*/
 
 .menu{
     text-decoration: none;
-    background-color: #001F3F;
-    height: 10vh;
+    /*background-color: #019b04;*/
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
 
 }
 
